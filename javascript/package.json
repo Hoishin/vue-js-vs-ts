@@ -14,7 +14,9 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.6",
     "@vue/cli-service": "^3.0.0-beta.6",
-    "vue-template-compiler": "^2.5.13"
+    "eslint-plugin-vue": "^4.4.0",
+    "vue-template-compiler": "^2.5.13",
+    "xo": "^0.20.3"
   },
   "babel": {
     "presets": [
@@ -30,5 +32,16 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "xo": {
+    "envs": ["browser"],
+    "extensions:": ["js", "vue"],
+    "prettier": true,
+    "overrides": [
+      {
+        "files": "src/**/*.vue",
+        "extends": ["plugin:vue/recommended"]
+      }
+    ]
+  }
 }
