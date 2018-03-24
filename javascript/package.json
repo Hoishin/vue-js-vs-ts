@@ -44,6 +44,14 @@
       "vue"
     ],
     "prettier": true,
-    "extends": "plugin:vue/recommended"
+    "extends": "plugin:vue/recommended",
+    "overrides": [
+      {
+        "files": "src/**/*.vue",
+        "rules": {
+          "unicorn/filename-case": ["error", {"case": "pascalCase"}]
+        }
+      }
+    ]
   }
 }
