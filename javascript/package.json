@@ -49,7 +49,12 @@
       {
         "files": "src/**/*.vue",
         "rules": {
-          "unicorn/filename-case": ["error", {"case": "pascalCase"}]
+          "unicorn/filename-case": ["error", {"case": "pascalCase"}],
+          "vue/html-closing-bracket-newline": [2, {
+            "singleline": "never",
+            "multiline": "always"
+          }],
+          "vue/html-indent": ["error", "tab"]
         }
       }
     ]
