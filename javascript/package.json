@@ -45,16 +45,22 @@
     ],
     "prettier": true,
     "extends": "plugin:vue/recommended",
+    "rules": {
+      "vue/html-indent": [
+        "error",
+        "tab"
+      ]
+    },
     "overrides": [
       {
         "files": "src/**/*.vue",
         "rules": {
-          "unicorn/filename-case": ["error", {"case": "pascalCase"}],
-          "vue/html-closing-bracket-newline": [2, {
-            "singleline": "never",
-            "multiline": "always"
-          }],
-          "vue/html-indent": ["error", "tab"]
+          "unicorn/filename-case": [
+            "error",
+            {
+              "case": "pascalCase"
+            }
+          ]
         }
       }
     ]
