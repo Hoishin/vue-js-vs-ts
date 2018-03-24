@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --open",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve --open"
+  },
+  "babel": {
+    "presets": [
+      "@vue/app"
+    ]
   },
   "dependencies": {
     "spectre.css": "^0.5.1",
@@ -19,29 +24,31 @@
     "vue-template-compiler": "^2.5.13",
     "xo": "^0.20.3"
   },
-  "babel": {
-    "presets": [
-      "@vue/app"
-    ]
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
   ],
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
   "xo": {
-    "envs": ["browser"],
-    "extensions:": ["js", "vue"],
+    "envs": [
+      "browser"
+    ],
+    "extensions:": [
+      "js",
+      "vue"
+    ],
     "prettier": true,
     "overrides": [
       {
         "files": "src/**/*.vue",
-        "extends": ["plugin:vue/recommended"]
+        "extends": [
+          "plugin:vue/recommended"
+        ]
       }
     ]
   }
