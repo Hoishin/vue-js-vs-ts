@@ -39,18 +39,11 @@
     "envs": [
       "browser"
     ],
-    "extensions:": [
+    "extensions": [
       "js",
       "vue"
     ],
     "prettier": true,
-    "overrides": [
-      {
-        "files": "src/**/*.vue",
-        "extends": [
-          "plugin:vue/recommended"
-        ]
-      }
-    ]
+    "extends": "plugin:vue/recommended"
   }
 }
